@@ -7,12 +7,13 @@ class Dashboard extends Component {
 
     static navigationOptions = ({navigation}) => {
         return {
+            title: null,
             headerStyle: {
                 backgroundColor: '#16191D',
                 borderBottomWidth: 0
             },
             headerTintColor: '#ffffff',
-            headerLeft: (
+            headerLeft: () => (
                 <Block row center middle style={{paddingHorizontal: 10}}>
                     <TouchableOpacity 
                         style={{

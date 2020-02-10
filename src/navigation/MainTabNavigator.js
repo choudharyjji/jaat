@@ -30,7 +30,7 @@ HomeStack.navigationOptions = ({ navigation }) => {
     }
     return {
       tabBarVisible,
-      tabBarLabel: ({ focused }) => (<Text center size={10} color={focused ? '#39ccdd' : colors.gray } style={{marginBottom: 5}}>Home</Text>),
+      tabBarLabel: ({ focused }) => (<Text center size={10} color={focused ? '#ec4226' : colors.gray } style={{marginBottom: 5}}>Home</Text>),
       tabBarIcon: ({ focused }) => (
         focused ? (
             <Image 
@@ -59,7 +59,7 @@ const HistoryStack = createStackNavigator({
   
 HistoryStack.navigationOptions = {
     tabBarLabel: ({ focused }) => (
-          <Text center size={10} color={focused ? '#39ccdd' : colors.gray } style={{marginBottom: 5}}>History</Text>
+          <Text center size={10} color={focused ? '#ec4226' : colors.gray } style={{marginBottom: 5}}>History</Text>
         ),
     tabBarIcon: ({ focused }) => (
       focused ? (
@@ -94,7 +94,7 @@ TrendingStack.navigationOptions = ({ navigation }) => {
     }
     return {
       tabBarVisible,
-      tabBarLabel: ({ focused }) => (<Text center size={10} color={focused ? '#39ccdd' : colors.gray } style={{marginBottom: 5}}>Trending</Text>),
+      tabBarLabel: ({ focused }) => (<Text center size={10} color={focused ? '#ec4226' : colors.gray } style={{marginBottom: 5}}>Trending</Text>),
       tabBarIcon: ({ focused }) => (
         focused ? (
             <Image 
@@ -129,7 +129,7 @@ HeroesStack.navigationOptions = ({navigation}) => {
   }
   return {
     tabBarVisible,
-    tabBarLabel: ({ focused }) => (<Text center size={10} color={focused ? '#39ccdd' : colors.gray } style={{marginBottom: 5}}>Heroes</Text>),
+    tabBarLabel: ({ focused }) => (<Text center size={10} color={focused ? '#ec4226' : colors.gray } style={{marginBottom: 5}}>Heroes</Text>),
     tabBarIcon: ({ focused }) => (
         focused ? (
             <Image 
@@ -158,7 +158,7 @@ const PopularStack = createStackNavigator({
   
 PopularStack.navigationOptions = ({navigation}) => {
     return {
-      tabBarLabel: ({ focused }) => (<Text center size={10} color={focused ? '#39ccdd' : colors.gray } style={{marginBottom: 5}}>Popular</Text>),
+      tabBarLabel: ({ focused }) => (<Text center size={10} color={focused ? '#ec4226' : colors.gray } style={{marginBottom: 5}}>Popular</Text>),
       tabBarIcon: ({ focused }) => (
         focused ? (
             <Image 
