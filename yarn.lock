@@ -828,6 +828,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@react-native-community/async-storage@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.7.1.tgz#ef2104d865de61ad91bba66613e57e689ff4e6a1"
+
 "@react-native-community/cli-debugger-ui@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-3.0.0.tgz#d01d08d1e5ddc1633d82c7d84d48fff07bd39416"
@@ -4844,6 +4848,10 @@ react-native-appstore-version-checker@^3.0.0:
   resolved "https://registry.yarnpkg.com/react-native-appstore-version-checker/-/react-native-appstore-version-checker-3.0.0.tgz#0c471402a09cb3fee4b0e2d031ffece5135d2009"
   dependencies:
     lodash.result "^4.5.2"
+
+react-native-device-info@^5.5.1:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-5.5.1.tgz#1b942f0d868161f96305055c296818ba415813dc"
 
 react-native-firebase@^5.6.0:
   version "5.6.0"

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "37651496338",
+    "firebase_url": "https://jaatapp-2020.firebaseio.com",
+    "project_id": "jaatapp-2020",
+    "storage_bucket": "jaatapp-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37651496338:android:a05ce440b8dd1a34c8154b",
+        "android_client_info": {
+          "package_name": "com.jaat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37651496338-cb6bt1tk10aq9fdoof14oeg1il91psdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5AgMhWu7dhMO7iweMDpryO079Lnl4gY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37651496338-cb6bt1tk10aq9fdoof14oeg1il91psdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
