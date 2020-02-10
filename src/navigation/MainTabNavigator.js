@@ -206,7 +206,7 @@ const AppStackNavigator = createStackNavigator({
     screen: AppTabNavigator,
     navigationOptions:({navigation}) => {
       return {
-        header: null
+        headerShown: false
       }
       
     }

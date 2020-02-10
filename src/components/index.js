@@ -10,7 +10,6 @@ import ControlLayout from './ControlLayout';
 import PlayPause from './PlayPause';
 import Bar from './Bar';
 import Time from './Time';
-import HeaderDiamonds from './HeaderDiamonds';
 
 export {
   Block,
@@ -24,6 +23,5 @@ export {
   ControlLayout, 
   PlayPause, 
   Bar, 
-  Time,
-  HeaderDiamonds
+  Time
 }

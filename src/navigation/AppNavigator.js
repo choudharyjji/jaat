@@ -13,7 +13,7 @@ const AuthStack = createStackNavigator(
         SignIn: SignIn,
     }, {
         defaultNavigationOptions: {
-          header: null
+          headerShown: false
         }
     }
 );
