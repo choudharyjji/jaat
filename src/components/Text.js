@@ -5,6 +5,7 @@ import * as theme from '../constants/theme';
 export default class Typography extends Component {
   render() {
     const {
+      hindi,
       center,
       right,
       color,
@@ -89,6 +90,7 @@ const styles = StyleSheet.create({
   medium: { fontFamily: 'Montserrat-Medium' },
   light: { fontFamily: 'Montserrat-Regular' },
   center: { textAlign: 'center' },
+  hindi: { fontFamily: 'KrutiDev010' },
   right: { textAlign: 'right' },
   blue: { color: theme.colors.blue, },
   lightblue: { color: theme.colors.lightblue, },
