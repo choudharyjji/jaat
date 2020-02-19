@@ -26,7 +26,7 @@ import { Block, Text } from '../components';
 class AuthLoadingScreen extends Component {
 
     componentDidMount(){
-        db.auth().onAuthStateChanged(user => {
+        db.auth().onAuthStateChanged(async user => {
             this.props.navigation.navigate(user ? 'App' : 'Auth');
         })
     }
@@ -38,7 +38,7 @@ class AuthLoadingScreen extends Component {
                     backgroundColor="#1c313a"
                     barStyle="light-content"
                 />
-                {!isLoaded(this.props.auth) ? (
+                {/* {!isLoaded(this.props.auth) ? (
                     <Block style={styles.loader}>
                         <Image 
                             source={require('../../assets/images/intro/splash-screen.jpg')}
@@ -50,7 +50,7 @@ class AuthLoadingScreen extends Component {
                     </Block>
                 ) : isEmpty(this.props.auth) ? (
                     null
-                ) : ( console.log("ready to transition") )}
+                ) : ( console.log("ready to transition") )} */}
             </Block>
         )
     }

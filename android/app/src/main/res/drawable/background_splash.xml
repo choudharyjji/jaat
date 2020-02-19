@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <gradient
+                android:angle="270"
+                android:startColor="#fb9751"
+                android:endColor="#ff5806"
+                android:type="linear"/>
+
+        </shape>
+    </item>
+
+<!--    <item-->
+<!--        android:width="724dp"-->
+<!--        android:height="382dp"-->
+<!--        android:drawable="@drawable/assets_images_comon_splash_image"-->
+<!--        android:gravity="center" />-->
+
+</layer-list>

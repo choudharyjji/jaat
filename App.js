@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 
+import SplashScreen from 'react-native-splash-screen'
+
 //redux
 import { Provider } from 'react-redux';
 import store from './src/redux/store/store';
@@ -30,6 +32,10 @@ class App extends Component{
       return this.getActiveRouteName(route);
     }
     return route.routeName;
+  }
+
+  componentDidMount = () => {
+    SplashScreen.hide();
   }
 
   render(){

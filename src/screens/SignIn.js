@@ -6,7 +6,7 @@ import PhoneInput from 'react-native-phone-input';
 
 //import database firebase
 import { db, fs } from '../config/fbConfig';
-import analytic from '../helpers/analytic';
+//import analytic from '../helpers/analytic';
 
 import { Block, Text, Button, Input } from '../components';
 
@@ -24,63 +24,26 @@ class SignIn extends Component {
     }
 
     confirmCode = (code) => {
-        
         this.setState({
             phoneLoading: true
         })
-
+            
         if(this.state.confirmationResult && code.length > 5) {
+            
             this.state.confirmationResult.confirm(code).then( async (user) => {
                 // check if user already exsits
                 //analytic.logEvent('user_login', data);
-
-                let checkUser = fs.collection('users').doc(user.uid);
-                await checkUser.get().then( async (snap) => {
-                    
-                    if(snap.exists){
-                        this.setState({
-                            phoneLoading: false
-                        });
-                        console.log('user already exsits');
-                        
-                    }else{
-                        
-                        return fs.collection('users').doc(user.uid).set({
-                            firstName: '',
-                            lastName: '',
-                            email: '',
-                            phone: user.phoneNumber,
-                            userPhoto: '',
-                            phoneVerified: true,
-                            refferedBy: '',
-                            createdAt: new Date()
-                        }).then(snap => {
-                            this.setState({
-                                phoneLoading: false
-                            });
-                        }).catch(error => {
-                            this.setState({
-                                phoneLoading: false
-                            });
-                        });
-                    }
-                }).catch(function(error) {
-                    this.setState({
-                        phoneLoading: false
-                    })
-                    console.log('Some Problem with creating user in DB');
-                });
-                
-            }).catch(error => {
                 this.setState({
                     phoneLoading: false
                 })
+                
+            }).catch(error => {
                 Alert.alert(
                     'Invalid OTP code',
                     'Please type your OTP code you have recieved from ML Guide. Check your messages or contact app administrator',
                     [
                         {
-                            text: 'OK', onPress: () => console.log('OK Pressed')
+                            text: 'OK', onPress: () => console.log(error)
                         },
                     ]
                 );
@@ -112,7 +75,7 @@ class SignIn extends Component {
         let verified = regexp.test(phoneNumber);
         
         if(verified){
-            db.auth().signInWithPhoneNumber(phoneNumber, true).then(confirmationResult => {
+            db.auth().signInWithPhoneNumber(phoneNumber, true).then( async confirmationResult => {
                 // SMS sent. Prompt user to type the code from the message, then sign the
                 //this.setState({ confirmResult })
                 this.setState({phoneLoading: false, isSentConfirmCode: true, confirmationResult: confirmationResult});
