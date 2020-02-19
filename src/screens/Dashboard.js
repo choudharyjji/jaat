@@ -28,12 +28,12 @@ class Dashboard extends Component {
                         />
                     </TouchableOpacity>   
                     <Text
+                        bold
                         style={{marginLeft: 8}}
-                        medium
                         color={'#fff'}
-                        size={14}
+                        size={18}
                     >
-                        Welcome To JAAT
+                        राम राम जी 
                     </Text> 
                 </Block>
             )
@@ -42,11 +42,27 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <Block>
-                <Text>
-                    Dashboard
-                </Text>
-            </Block>
+            <SafeAreaView style={{flex: 1}}>
+                <StatusBar backgroundColor="#16191D" barStyle="light-content" />
+                <Block style={{backgroundColor: '#20242A'}}>
+                    <ScrollView
+                        style={{
+                            flex: 1
+                        }}
+                    >
+                        <Block>
+                            <Block 
+                                center
+                                middle
+                            >
+                                <Text bold>
+                                    कार्य प्रगति पर है 
+                                </Text>
+                            </Block>
+                        </Block>
+                    </ScrollView>
+                </Block>
+            </SafeAreaView>
         )
     }
 }

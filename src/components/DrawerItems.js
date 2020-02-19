@@ -27,8 +27,8 @@ class DrawerItems extends Component {
     
         const shareOptions = {
             title: 'Share via',
-            message: 'Share ML Guide and show your love',
-            url: 'https://play.google.com/store/apps/details?id=com.mobilelegendsguide',
+            message: 'जाटों के इतिहास के बारे में जाने और जाट समाज से जुड़े',
+            url: 'https://play.google.com/store/apps/details?id=com.jaat',
         };
         
         return Share.open(shareOptions)
@@ -108,86 +108,7 @@ class DrawerItems extends Component {
                                     </Text>
                                 </TouchableOpacity>
                             </Block>
-                            <Block>
-                                <TouchableOpacity
-                                    style={{
-                                        backgroundColor: '#3b3b3d',
-                                        paddingVertical: 10,
-                                        paddingHorizontal: 20,
-                                        borderBottomWidth: 1,
-                                        borderBottomColor: 'rgba(255,255,255,.2)'
-                                    }}
-                                    //onPress={() => navigation.navigate('SpellsPage')}
-                                >
-                                    <Text
-                                        size={14}
-                                        color={'#fff'}
-                                    >
-                                        Spells
-                                    </Text>
-                                </TouchableOpacity>
-                            </Block>
-                            <Block>
-                                <TouchableOpacity
-                                    style={{
-                                        backgroundColor: '#3b3b3d',
-                                        paddingVertical: 10,
-                                        paddingHorizontal: 20,
-                                        borderBottomWidth: 1,
-                                        borderBottomColor: 'rgba(255,255,255,.2)'
-                                    }}
-                                    //onPress={() => navigation.navigate('ItemsPage')}
-                                >
-                                    <Text
-                                        size={14}
-                                        color={'#fff'}
-                                    >
-                                        Items
-                                    </Text>
-                                </TouchableOpacity>
-                            </Block>
-                            <Block
-                                style={{ marginBottom: 20 }}
-                            >
-                                <TouchableOpacity
-                                    style={{
-                                        backgroundColor: '#3b3b3d',
-                                        paddingVertical: 10,
-                                        paddingHorizontal: 20,
-                                        borderBottomWidth: 1,
-                                        borderBottomColor: 'rgba(255,255,255,.2)'
-                                    }}
-                                    onPress={() => navigation.navigate('DiamondsPage')}
-                                >
-                                    <Text
-                                        size={14}
-                                        color={'#fff'}
-                                    >
-                                        Earn Diamonds
-                                    </Text>
-                                </TouchableOpacity>
-                                
-                            </Block>
-                            <Block>
-                                <TouchableOpacity
-                                    style={{
-                                        backgroundColor: '#3b3b3d',
-                                        paddingVertical: 10,
-                                        paddingHorizontal: 20,
-                                        borderBottomWidth: 1,
-                                        borderBottomColor: 'rgba(255,255,255,.2)'
-                                    }}
-                                    //onPress={() => navigation.navigate('ReedemDiamonds')}
-                                >
-                                    <Text
-                                        size={14}
-                                        color={'#fff'}
-                                    >
-                                        Reedem Diamonds
-                                    </Text>
-                                </TouchableOpacity>
-                                
-                            </Block>
+                            
                             <Block>
                                 <TouchableOpacity
                                     style={{

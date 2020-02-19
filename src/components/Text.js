@@ -47,6 +47,7 @@ export default class Typography extends Component {
       button && styles.button,
       center && styles.center,
       right && styles.right,
+      hindi && styles.hindi,
       color && { color },
       color && color === 'blue' && styles.blue,
       color && color === 'lightblue' && styles.lightblue,
