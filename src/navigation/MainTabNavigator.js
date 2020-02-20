@@ -12,6 +12,10 @@ import DrawerItems from '../components/DrawerItems';
 
 import DashBoard from '../screens/Dashboard';
 import History from '../screens/History';
+//History
+import JaatEtihaas from '../screens/jaatstories/JaatEtihaas';
+import ChapterDetails from '../screens/jaatstories/ChapterDetails';
+
 import Trending from '../screens/Trending';
 import Heroes from '../screens/Heroes';
 import Popular from '../screens/Popular';
@@ -54,7 +58,9 @@ HomeStack.navigationOptions = ({ navigation }) => {
 };
 
 const HistoryStack = createStackNavigator({
-    History: History
+    History: History,
+    JaatEtihaas: JaatEtihaas,
+    ChapterDetails: ChapterDetails
 });
   
 HistoryStack.navigationOptions = {
